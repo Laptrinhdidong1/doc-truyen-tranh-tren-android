@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.csccom.luatle.main"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:icon="@drawable/shortcut"
+        android:label="Comic Reader" >
+        <activity
+            android:name=".ReadComicActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="OpenActivity"></activity>
+        <activity android:name=".ListComicActivity"></activity>
+        <activity android:name="SettingActivity"></activity>
+        <activity android:name="DownloadActivity"></activity>
+    </application>
+
+</manifest>
